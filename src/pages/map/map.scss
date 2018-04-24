@@ -1,0 +1,12 @@
+page-map {
+  ion-content {
+    background-color: color($colors,primary)!important;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

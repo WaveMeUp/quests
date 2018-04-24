@@ -1,0 +1,45 @@
+page-home {
+  ion-content {
+    background-color: color($colors,primary)!important;
+  }
+
+  .card-background-page {
+    ion-card {
+      position: relative;
+      background: black;
+      //text-align: center;
+    }
+
+    img {
+      opacity: 0.7;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 15px;
+      font-size: 2.0em;
+      left: 15px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      text-align: center;
+      color: #ebc28a;
+      font-size: 3.0em;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    .card-lock {
+      position: absolute;
+      text-align: center;
+      bottom: 30%;
+      color: white;
+      font-size: 3em;
+      width: 100%;
+    }
+  }
+}

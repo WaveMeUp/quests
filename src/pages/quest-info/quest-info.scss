@@ -1,0 +1,78 @@
+page-quest-info {
+  ion-content {
+    background-color: color($colors,primary)!important;
+  }
+  .card-background-page {
+    ion-card {
+      position: relative;
+      margin: 0;
+      width: 100%;
+      border-radius: 0px;
+      //text-align: center;
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 0;
+      font-size: 2.0em;
+      padding: 9px;
+      font-weight: bold;
+      color: #fff;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.43);
+    }
+
+    .card-subtitle {
+      color: #ebc28a;
+      font-size: 2em;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      padding: 38px;
+      background: linear-gradient(30deg, transparent 50%, rgba(0, 0, 0, 0.43) 0) bottom left;
+
+      .text {
+        position: relative;
+        right: -30px;
+        top: -26px;
+      }
+    }
+
+    .card-corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      padding: 38px;
+      background: linear-gradient(30deg, transparent 50%, rgba(0, 0, 0, 0.43) 0) bottom left;
+    }
+
+    .quest-info {
+      text-align: center;
+      font-size: 2em;
+      line-height: 12px;
+      color: color($colors, gold, base);
+    }
+
+    .map {
+      text-align: center;
+      color: white;
+      font-size: 5em;
+      //padding-top: 20px;
+    }
+
+    .arrow-container {
+      display: flex;
+      justify-content: center;
+      .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-top: 35px solid #ebc28a;
+      }
+    }
+  }
+}

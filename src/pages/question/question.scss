@@ -1,0 +1,88 @@
+page-question {
+  ion-content {
+    background-color: color($colors,primary)!important;
+    ion-card {
+      position: relative;
+      margin: 0!important;
+      width: 100%!important;
+      border-radius: 0px;
+      //text-align: center;
+    }
+
+    .card-subtitle {
+      color: #ebc28a;
+      font-size: 2em;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      padding: 38px;
+      background: linear-gradient(30deg, transparent 50%, rgba(0, 0, 0, 0.43) 0) bottom left;
+
+      .text {
+        position: relative;
+        right: -30px;
+        top: -26px;
+        text-align: center;
+      }
+    }
+
+    .card-corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      padding: 38px;
+      background: linear-gradient(30deg, transparent 50%, rgba(0, 0, 0, 0.43) 0) bottom left;
+    }
+
+    .title {
+      text-align: center;
+      color: #fff;
+      font-size: 2em;
+    }
+
+    .question {
+      color: #fff;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    ion-list {
+      button {
+        color: #fff!important;
+        background-color: color($colors, primary, base)!important;
+      }
+    }
+  }
+
+  ion-footer {
+    .price {
+      text-align: center;
+      color: #ebc28a;
+      font-size: 2em;
+    }
+
+    progress-bar {
+      .progress-outer {
+        border-radius: 7px!important;
+        background-color: #ecc898 !important;
+      }
+
+      .progress-inner {
+        color: black;
+        border-radius: 7px!important;
+        background: repeating-linear-gradient(
+            135deg,
+            #fff,
+            #fff 2px,
+            #ecc898 0px,
+            #ecc898 5px
+        )
+      }
+    }
+  }
+
+
+}

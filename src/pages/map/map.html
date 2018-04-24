@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title><span style="color: #ebc28a">Map</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="container">
+    <div>
+      <img src="{{quest.mapUrl}}" imageViewer />
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <button color="gold" ion-button block (click)="startQuest(quest)">Start quest</button>
+  </ion-toolbar>
+</ion-footer>

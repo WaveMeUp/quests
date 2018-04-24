@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <span style="color: #ebc28a">{{appName}}</span>
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar color="primary">
+    <ion-title>Active Quests</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let quest of quests" (click)="openQuest(quest)">
+    <img src="{{quest.imgUrl}}"/>
+    <div class="card-title">{{quest.title}}</div>
+    <div class="card-subtitle">Start</div>
+    <div class="card-lock">
+      <ion-icon name="ios-lock-outline" *ngIf="quest.locked"></ion-icon>
+      <ion-icon name="ios-unlock-outline" *ngIf="!quest.locked"></ion-icon>
+    </div>
+  </ion-card>
+</ion-content>

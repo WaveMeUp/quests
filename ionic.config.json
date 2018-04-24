@@ -1,0 +1,8 @@
+{
+  "name": "museums_quests",
+  "app_id": "d493e7cc",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

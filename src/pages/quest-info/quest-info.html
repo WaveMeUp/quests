@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title><span style="color: #ebc28a">#TravelGo</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-card (click)="startQuest(quest)">
+    <img src="{{quest.imgUrl}}"/>
+    <div class="card-title">{{quest.title}}</div>
+    <div class="card-subtitle">
+      <div class="text">
+        ~ {{quest.timeToComplete}} min
+      </div>
+    </div>
+    <!--<div class="card-corner"></div>-->
+  </ion-card>
+  <div class="arrow-container">
+    <div class="arrow-down"></div>
+  </div>
+  <div class="map">
+    <ion-icon name="ios-map-outline"></ion-icon>
+  </div>
+  <div class="quest-info">
+    <p>{{quest.getQuestionsCount()}} questions</p>
+    <p>{{quest.partners.length}} partners</p>
+    <p>{{quest.availableMiles}} miles available</p>
+  </div>
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <button color="gold" ion-button block (click)="openMap(quest)">Open map</button>
+  </ion-toolbar>
+</ion-footer>
