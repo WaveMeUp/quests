@@ -2,10 +2,14 @@ page-ad {
   ion-content {
     background-color: color($colors,primary)!important;
   }
-  .ad {
-    img {
-      max-height: 100%;
+  .container {
+    .ad {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-height: 100%;
+      }
     }
   }
-
 }
