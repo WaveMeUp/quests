@@ -15,8 +15,8 @@
     <div class="card-title">{{quest.title}}</div>
     <div class="card-subtitle">Start</div>
     <div class="card-lock">
-      <ion-icon name="ios-lock-outline" *ngIf="quest.locked"></ion-icon>
-      <ion-icon name="ios-unlock-outline" *ngIf="!quest.locked"></ion-icon>
+        <img *ngIf="!quest.locked" src="assets/imgs/lock-open.png">
+        <img *ngIf="quest.locked" src="assets/imgs/lock-close.png">
     </div>
   </ion-card>
 </ion-content>

@@ -12,7 +12,7 @@
 
 <ion-content>
   <ion-card>
-    <img src="{{quest.imgUrl}}"/>
+    <img src="{{currentQuestion.imgUrl}}"/>
     <div class="card-subtitle">
       <div class="text">
         {{getQuestionCount()}} question <br />
@@ -24,12 +24,11 @@
   <div class="title"><p>{{getQuestionCount()}} question:</p></div>
   <div class="question"><p>{{currentQuestion.title}}</p></div>
   <ion-list>
-    <button ion-item *ngFor="let answer of currentQuestion.answers" (click)="selectAnswer(answer)">
+    <button ion-item *ngFor="let answer of currentQuestion.answers" [disabled]="wrongAnswer && !answer.correct" (click)="!wrongAnswer && selectAnswer(answer)">
       - {{ answer.title }}
     </button>
   </ion-list>
   <!--<p>Progress: {{progress}}</p>-->
-
 </ion-content>
 
 <ion-footer>

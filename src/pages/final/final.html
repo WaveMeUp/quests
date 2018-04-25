@@ -1,18 +1,26 @@
-<!--
-  Generated template for the FinalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>final</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><span style="color: #ebc28a">#TravelGo</span></ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-  <p>You got {{progress}} of 100 miles</p>
+  <div class="container">
+    <div class="text">
+    <span>
+      Congratulations!<br />
+      Your score is {{correctAnswers}} / {{quest.getQuestionsCount()}} <br />
+      Hope you enjoyed exploring Saint-Petersburg with TravelGO. <br />
+      You might need to refill your energy to do more quests, so here is your prize
+    </span>
+    </div>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <button color="gold" ion-button block (click)="getPrize()">Get prize</button>
+    <button color="gold" ion-button block (click)="toMainPage()">Quests</button>
+  </ion-toolbar>
+</ion-footer>

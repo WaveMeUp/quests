@@ -40,6 +40,13 @@ page-home {
       color: white;
       font-size: 3em;
       width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 }

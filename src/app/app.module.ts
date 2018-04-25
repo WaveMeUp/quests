@@ -14,6 +14,7 @@ import { ProgressProvider } from '../providers/progress/progress';
 import {MapPage} from "../pages/map/map";
 import {IonicImageViewerModule} from "ionic-img-viewer";
 import {ProgressBarModule} from "angular-progress-bar";
+import {AdPage} from "../pages/ad/ad";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ProgressBarModule} from "angular-progress-bar";
     QuestInfoPage,
     QuestionPage,
     FinalPage,
-    MapPage
+    MapPage,
+    AdPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import {ProgressBarModule} from "angular-progress-bar";
     QuestInfoPage,
     QuestionPage,
     FinalPage,
-    MapPage
+    MapPage,
+    AdPage
 
   ],
   providers: [

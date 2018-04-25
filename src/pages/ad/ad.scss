@@ -1,0 +1,11 @@
+page-ad {
+  ion-content {
+    background-color: color($colors,primary)!important;
+  }
+  .ad {
+    img {
+      max-height: 100%;
+    }
+  }
+
+}

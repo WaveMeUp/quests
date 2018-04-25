@@ -8,7 +8,7 @@
 
 
 <ion-content class="card-background-page">
-  <ion-card (click)="startQuest(quest)">
+  <ion-card>
     <img src="{{quest.imgUrl}}"/>
     <div class="card-title">{{quest.title}}</div>
     <div class="card-subtitle">
@@ -22,7 +22,8 @@
     <div class="arrow-down"></div>
   </div>
   <div class="map">
-    <ion-icon name="ios-map-outline"></ion-icon>
+    <img src="assets/imgs/map.png">
+    <!--<ion-icon name="ios-map-outline"></ion-icon>-->
   </div>
   <div class="quest-info">
     <p>{{quest.getQuestionsCount()}} questions</p>
